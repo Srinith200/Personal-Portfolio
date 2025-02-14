@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f5a27c55e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Srinith (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <P>Software Developer</P>
+                <h1>Hi, I'm <span>Srinith Tangudu</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2025-02-14 at 18.56.58_25925898.jpg" class="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Srinith, a passionate B.Tech civil engineering student from Srikakulam, Andhra Pradesh. With a strong academic record, leadership experience, and active participation in organizing events, I aim to innovate and grow in the field. I love exploring practical solutions and continuously improving my technical and management skills.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C++,SQL,HTML,CSS,JavaScript,Python(basics),dart(basics)</li>
+                            <li><span>Developer Tools</span><br>Dev C++,VS code,CVAT,Excel(basics)</li>
+                            <li><span>Coursework</span><br>Data Structures and Algorithms,OOPS,Database Management,Operating Systems,Computer
+                                Architecture(basics)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>DeepNet Analytics Intern</span><br> - Developed and deployed advanced machine learning models to enhance factory worker safety by monitoring their
+                                safety equipment (helmets, gloves) and tracking worker locations.
+                            <br> - Implemented real-time alert systems for emergencies.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>National Institute of Technology, Warangal(2022-2026)</span><br>Civil Engineering with Computer Science Minor <br>CGPA: 8.62</li>
+                            <li><span>Sri Chaitanya Junior College(2020-2022)</span><br>Telangana Board of Intermediate Education, Telangana <br>Percentage: 97.7</li>
+                            <li><span>Dr.KKR Gowtham(2020)</span><br>Board of Secondary Education, Andhra Pradesh <br>Percentage: 98.8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/10b1ea85-7022-48f1-b8ab-a6b45f6dbaa1.webp">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>Impressive web development project built with HTML, CSS, and JavaScript! Clean code and seamless design.</p>
+                        <a href="http://127.0.0.1:5500/index.html#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/6d6e891a-d5ae-4cd4-8d20-0d943b24fa15.webp">
+                    <div class="layer">
+                        <h3>AI Chatbot</h3>
+                        <p>Great AI chatbot project! Excellent use of API and JavaScript for interactive user experience.</p>
+                        <a href="http://127.0.0.1:5501/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/99cc63f3-ce76-40c3-9670-d7d52128932b.webp">
+                    <div class="layer">
+                        <h3>DBMS Project</h3>
+                        <p>Well-organized DBMS project on IPL data! Effective use of SQL for querying and data analysis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ---------contact--- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tangudusrinith@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7702218653</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/srinith-tangudu/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srinith200"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/srinith_._/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Srinith Resume Recent.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+ </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHiU2dywpnBlMWZ_EBF72BhX54rg4_NpM8HmXxwnJqXMtzRMpV1gpb2N7vqQXzfJpK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            mag.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                mag.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
